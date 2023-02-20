@@ -1,15 +1,15 @@
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
 import MemoView from '../../views/MemoView';
-import useParamsView from '../../views/useParamsView';
+import PracticeView from '../../views/PracticeView';
 
 const data = {
     memo: {
         html:<MemoView/>,
     },
-    // useParams: {
-    //     html:<useParamsView/>,
-    // }
+    prac: {
+        html:<PracticeView/>
+    }
 };
 
 const DataPage = () => {

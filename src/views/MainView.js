@@ -11,6 +11,7 @@ function MainView() {
             <h2>Pages</h2>
             <ul class="icon-list">
               <li><a href="each/memo">메모장</a></li>
+              <li><a href="each/prac">예제</a></li>
             </ul>
 
           </div>

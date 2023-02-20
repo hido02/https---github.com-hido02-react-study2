@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainPage from"./pages/MainPage";
+import MainPage from"./pages/main/MainPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EachPage from './pages/each/EachPage';
 
