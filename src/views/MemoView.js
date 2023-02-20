@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import AddMemo from '../pages/AddMemo';
+import MemoList from '../pages/MemoList';
 
 const App = () => {
     const [memos, setMemos] = useState([
@@ -26,18 +27,28 @@ const App = () => {
         }
       ]);
 
+      const onModify = (id, newTitle, newContent) => {
+        setMemos(
+          memos.map(memo => memo.id === id ? {...memo, title: newTitle, content: newContent} : memo)
+        );
+      }
+    
+      const onDelete = (id) => {
+        setMemos(memos.filter(memo => memo.id !== id));
+      };
+
     return (
         <>
         <Container>
             <Row>
-
+            &nbsp;
             </Row>
             <Row>
             <Col>
             <AddMemo memos={memos} setMemos={setMemos}/>
             </Col>
             <Col>
-            
+            <MemoList memos={memos} onDelete={onDelete} onModify={onModify}/>
             </Col>
             </Row>
         </Container>
