@@ -1,48 +1,22 @@
-import { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import AddMemo from '../pages/AddMemo';
+function MainView() {
+  return (
+    <main>
+      <h1>React Study</h1>
+      <p class="fs-5 col-md-8">리액트 뿌시기</p>
 
-const App = () => {
-    const [memos, setMemos] = useState([
-        {
-          id: 1,
-          title: '메모1',
-          content: '내용1',
-          date: new Date().getTime()
-        },
-        {
-          id: 2,
-          title: '메모2',
-          content: '내용2',
-          date: new Date().getTime()
-        },
-        {
-          id: 3,
-          title: '메모3',
-          content: '내용3',
-          date: new Date().getTime()
-        }
-      ]);
+      <hr class="col-3 col-md-2 mb-5"/>
 
-    return (
-        <>
-        <Container>
-            <Row>
+      <div class="row g-5">
+          <div class="col-md-8">
+            <h2>Pages</h2>
+            <ul class="icon-list">
+              <li><a href="each/memo">메모장</a></li>
+            </ul>
 
-            </Row>
-            <Row>
-            <Col>
-            <AddMemo memos={memos} setMemos={setMemos}/>
-            </Col>
-            <Col>
-            
-            </Col>
-            </Row>
-        </Container>
-        </>
-    );
+          </div>
+        </div>
+    </main>
+  )
 }
 
-export default App;
+export default MainView;
