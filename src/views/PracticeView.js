@@ -5,7 +5,7 @@ function PracticeView() {
           <div class="col-md-8">
             <h2>예제</h2>
             <ul class="icon-list">
-              <li><a href="each/prac/useParams">useParams</a></li>
+              <li><a href="./prac/useParams">useParams</a></li>
             </ul>
 
           </div>
