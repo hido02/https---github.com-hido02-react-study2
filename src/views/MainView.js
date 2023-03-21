@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function MainView() {
   return (
     <main>
@@ -12,6 +14,8 @@ function MainView() {
             <ul class="icon-list">
               <li><a href="each/memo">메모장</a></li>
               <li><a href="each/prac">예제</a></li>
+              <li><Link to="list">리스트</Link></li>
+              <li><Link to="list/write">글쓰기</Link></li>
             </ul>
 
           </div>
