@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-const Test = () => {
+const UseParams = () => {
     let { params } = useParams();
 
     return (
@@ -10,4 +10,4 @@ const Test = () => {
     )
 }
 
-export default Test;
+export default UseParams;
