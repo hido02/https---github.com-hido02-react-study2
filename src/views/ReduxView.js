@@ -1,3 +1,4 @@
+import Card from 'react-bootstrap/Card';
 import { useState } from 'react';
 import '../css/redux.css';
 import Top from '../components/redux/Top';
@@ -12,13 +13,15 @@ const ReduxView = () => {
     // }
 
     return (
-        <div className='container'>
+        <Card>
+            <Card.Body>
             <h1>최상단 화면</h1>
             {/* <Top number={number}/>
             <Bottom addNumber={addNumber} /> */}
             <Top />
             <Bottom />
-        </div>
+            </Card.Body>
+        </Card>
     );
 };
 
