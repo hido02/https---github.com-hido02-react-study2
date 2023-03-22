@@ -1,8 +1,10 @@
 // 액션
 // export를 주면 외부에서 쓸 수 있다
-export const increase = () => (
-    {type:"INCREMENT"}
-);
+export const increase = (username) => (
+    {type:"INCREMENT", 
+    payload: username, 
+}); // payload: 키 값(이름 마음대로)
+
 
 export const decrease = () => (
     {type:"DECREMENT"}
@@ -11,15 +13,16 @@ export const decrease = () => (
 
 // 상태 
 const initstate = {
-    number: 0,
+    number: 1,
     
     // state에 객체나 배열로도 넣을 수 있음
-    users: [
-        {id: 0, }
-    ],
-    user: {
+    // users: [
+    //     {id: 0, }
+    // ],
+    // username: {
 
-    },
+    // },
+    username: "ssar",
 };
 
 const initstate2 = {
@@ -31,7 +34,7 @@ const initstate2 = {
 const reducer = (state = initstate, action) => {
     switch(action.type) {
         case "INCREMENT":
-            return {number : state.number + 1};
+            return {number : state.number + 1, username: action.payload};
             // return되면 그걸 호출한 쪽에서 받는게 아니라 return되는 순간 ui가 변경됨 (state가 자동으로 변경되기 때문)
             case "DECREMENT": 
             return {number : state.number - 1};
