@@ -16,6 +16,7 @@ function MainView() {
               <li><a href="each/prac">예제</a></li>
               <li><Link to="list">리스트</Link></li>
               <li><Link to="list/write">글쓰기</Link></li>
+              <li><Link to="redux">Redux</Link></li>
             </ul>
 
           </div>

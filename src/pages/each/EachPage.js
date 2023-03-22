@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
 import MemoView from '../../views/MemoView';
 import PracticeView from '../../views/PracticeView';
+import ReduxView from '../../views/ReduxView';
 
 const data = {
     memo: {
@@ -9,6 +10,9 @@ const data = {
     },
     prac: {
         html:<PracticeView/>
+    },
+    redux: {
+        html: <ReduxView/>
     }
 };
 

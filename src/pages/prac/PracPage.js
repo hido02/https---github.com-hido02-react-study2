@@ -1,10 +1,14 @@
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
 import UseParams from '../useParams';
+import ReduxView from '../../views/ReduxView';
 
 const data = {
     useParams: {
         html:<UseParams/>
+    },
+    redux: {
+        html:<ReduxView/>
     }
 };
 
