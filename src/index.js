@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import reducer from './store';
+import { legacy_createStore as createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore(reducer); // store를 App 모든 곳에서 사용할 수 있어야 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Provider store={store}> 
     <App />
+    </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );
