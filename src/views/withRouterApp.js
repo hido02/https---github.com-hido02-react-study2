@@ -5,11 +5,12 @@ import Menu from 'components/Menu';
 import ShowPageInfo from '../components/ShowPageInfo';
 
 const withRouterApp = () => {
+    console.log("withRouterApp")
     return (
         <div>
-            <Route exact path="/" component={Home} />
+            {/* <Route exact path="/" component={Home} />
       <Route path="/about/:name?" component={About} />
-      <Route path="/posts" component={Posts}/>
+      <Route path="/posts" component={Posts}/> */}
       <ShowPageInfo />
         </div>
     );
