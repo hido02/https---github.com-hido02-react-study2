@@ -17,6 +17,8 @@ function MainView() {
               <li><Link to="list">리스트</Link></li>
               <li><Link to="list/write">글쓰기</Link></li>
               <li><Link to="redux">Redux</Link></li>
+              <li><Link to="alignCenter">가운데 정렬</Link></li>
+
             </ul>
 
           </div>

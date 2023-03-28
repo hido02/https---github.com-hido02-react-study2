@@ -46,3 +46,9 @@
 .basic{
   margin-top: 40px;
 }
+
+.TextBox {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}

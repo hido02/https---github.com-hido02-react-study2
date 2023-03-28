@@ -8,6 +8,7 @@ import WritePage from './pages/WritePage';
 
 import './App.css';
 import ReduxView from './views/ReduxView';
+import AlignCenterView from './views/AlignCenterView';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Route path="/list" element={<ListPage />}/>
     <Route path="/list/write" element={<WritePage />}/>
     <Route path="redux" element={<ReduxView />}/>
+    <Route path="alignCenter" element={<AlignCenterView />}/>
     {/*상태-writepage에서는 listpage에 접근할 수 있는 방법이 없다 */}
     </Routes>
   );

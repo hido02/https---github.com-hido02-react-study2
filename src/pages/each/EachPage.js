@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
+import AlignCenterView from '../../views/AlignCenterView';
 import MemoView from '../../views/MemoView';
 import PracticeView from '../../views/PracticeView';
 import ReduxView from '../../views/ReduxView';
@@ -13,7 +14,10 @@ const data = {
     },
     redux: {
         html: <ReduxView/>
-    }
+    },
+    alignCenter: {
+        html: <AlignCenterView/>
+    },
 };
 
 const DataPage = () => {
