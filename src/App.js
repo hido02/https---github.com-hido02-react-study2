@@ -13,6 +13,7 @@ import withRouterApp from './views/withRouterApp';
 import GroupMainView from './instudy/group/GroupMainView';
 import View from './instudy/group/GroupModal/View';
 import DetailedModalApp from './instudy/group/DetailedModal/DetailedModalApp';
+import ProfileCard from './instudy/group/Profile/ProfileCard';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <Route path="GroupMainView" element={<GroupMainView />}/>
     <Route path="view" element={<View />}/>
     <Route path="detailedModal" element={<DetailedModalApp />}/>
+    <Route path="profile" element={<ProfileCard />}/>
     </Routes>
     
   );

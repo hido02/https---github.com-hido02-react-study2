@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import DetailedModalApp from '../../instudy/group/DetailedModal/DetailedModalApp';
 import GroupMainView from '../../instudy/group/GroupMainView';
 import View from '../../instudy/group/GroupModal/View';
+import ProfileCard from '../../instudy/group/Profile/ProfileCard';
 import AlignCenterView from '../../views/AlignCenterView';
 import MemoView from '../../views/MemoView';
 import PracticeView from '../../views/PracticeView';
@@ -29,6 +30,9 @@ const data = {
     },
     detailedModal: {
         html: <DetailedModalApp />
+    },
+    profile: {
+        html: <ProfileCard />
     }
 
 };
