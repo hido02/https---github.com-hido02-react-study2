@@ -22,6 +22,8 @@ function MainView() {
 
               <li><Link to="/subRoute">서브라우트</Link></li>
               <li><Link to="/GroupMainView">인스터디 그룹 메인 뷰</Link></li>
+              <li><Link to="/view">인스터디 모달</Link></li>
+              <li><Link to="/detailedModal">인스터디 상세 모달</Link></li>
 
             </ul>
 

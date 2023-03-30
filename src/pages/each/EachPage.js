@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
+import DetailedModalApp from '../../instudy/group/DetailedModal/DetailedModalApp';
 import GroupMainView from '../../instudy/group/GroupMainView';
+import View from '../../instudy/group/GroupModal/View';
 import AlignCenterView from '../../views/AlignCenterView';
 import MemoView from '../../views/MemoView';
 import PracticeView from '../../views/PracticeView';
@@ -21,6 +23,12 @@ const data = {
     },
     GroupMainView: {
         html: <GroupMainView />
+    },
+    view: {
+        html: <View />
+    },
+    detailedModal: {
+        html: <DetailedModalApp />
     }
 
 };
