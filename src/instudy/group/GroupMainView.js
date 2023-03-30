@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AssignmentModal from './Assignment/AssignmentModal';
+import { Link } from "react-router-dom";
 
 const GroupMainView = () => {
 
@@ -16,10 +16,21 @@ const GroupMainView = () => {
         console.log(group);
     }, []);
 
+    const cardStyle = {
+        width: '18rem',
+    }
+
     return (
         <div>
-            ㅇㅇ
-            <AssignmentModal group={group} />
+            <div class="card" style={ cardStyle }>
+  <div class="card-body">
+    {/* <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
+    <Link to="/detailedModal">1과목 끝내기</Link>
+    {/* <a href="#" class="card-link">Another link</a> */}
+  </div>
+</div>
         </div>
     );
 };

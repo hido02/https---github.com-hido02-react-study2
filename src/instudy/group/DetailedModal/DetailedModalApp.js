@@ -11,23 +11,21 @@ const DetailedModalApp = () => {
 
     const [modal, setModal] = useState(false);
 
+    const [clickedNum, setClickedNum] = useState(0);
+
     return (
         <div>
             <div className="App">
                 {
-                    title.map(function(content){
-                        return (
-                            <div className='list'>
-                                <h3>{content}</h3>
-                                <p>2022-03-18</p>
-                                <hr/>
-                                </div>
-                        )
-                    })
+                    title.map((content, idx) => <div className='list' key={idx}>
+                    <h3 onMouseDown={(e) => { e.preventDefault() }} onClick={()=>{setClickedNum(idx)}}>{content}</h3>
+                    <p>2022-03-18</p>
+                    <hr/>
+                    </div>)
                 }
 
-                <button onClick={ ()=> {setModal(!modal) } }>모달창 여닫기</button>
-                {modal == true ? <DetailedModal /> : null}
+                <button onClick={ ()=> {setModal(!modal) } }>모달창 여닫</button>
+                {modal == true ? <DetailedModal title={title} clickedNum={clickedNum}/> : null}
             </div>
         </div>
     );
