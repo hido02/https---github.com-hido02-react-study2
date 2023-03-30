@@ -20,6 +20,9 @@ function MainView() {
               <li><Link to="/alignCenter">가운데 정렬</Link></li>
               <li><Link to="/withrouter">withRouter</Link></li>
 
+              <li><Link to="/subRoute">서브라우트</Link></li>
+              <li><Link to="/GroupMainView">인스터디 그룹 메인 뷰</Link></li>
+
             </ul>
 
           </div>

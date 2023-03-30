@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
+import GroupMainView from '../../instudy/group/GroupMainView';
 import AlignCenterView from '../../views/AlignCenterView';
 import MemoView from '../../views/MemoView';
 import PracticeView from '../../views/PracticeView';
@@ -18,6 +19,10 @@ const data = {
     alignCenter: {
         html: <AlignCenterView/>
     },
+    GroupMainView: {
+        html: <GroupMainView />
+    }
+
 };
 
 const DataPage = () => {
