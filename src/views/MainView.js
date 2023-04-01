@@ -25,6 +25,8 @@ function MainView() {
               <li><Link to="/view">인스터디 모달</Link></li>
               <li><Link to="/detailedModal">인스터디 상세 모달</Link></li>
               <li><Link to="/profile">프로필</Link></li>
+              <li><Link to="/header">헤더</Link></li>
+              <li><Link to="/bottomNav2">하단 네비바</Link></li>
 
             </ul>
 

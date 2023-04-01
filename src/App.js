@@ -14,6 +14,9 @@ import GroupMainView from './instudy/group/GroupMainView';
 import View from './instudy/group/GroupModal/View';
 import DetailedModalApp from './instudy/group/DetailedModal/DetailedModalApp';
 import ProfileCard from './instudy/group/Profile/ProfileCard';
+import Header from './components/Header';
+import justfiyCenter from './pages/prac/justifyCenter';
+import bottomNav from './instudy/bottomNav2';
 
 
 function App() {
@@ -33,6 +36,9 @@ function App() {
     <Route path="view" element={<View />}/>
     <Route path="detailedModal" element={<DetailedModalApp />}/>
     <Route path="profile" element={<ProfileCard />}/>
+    <Route path="header" element={<Header />}/>
+    <Route path="justifyCenter" element={<justfiyCenter />}/>
+    <Route path="bottomNav2" element={<bottomNav2 />}/>
     </Routes>
     
   );

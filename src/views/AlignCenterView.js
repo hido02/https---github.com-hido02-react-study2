@@ -6,9 +6,14 @@ import '../css/AlignCenter.css';
 const AlignCenterView = () => {
     return (
         <>
-            <div class="container">
-  <div class="child"></div>
+<nav class="navbar fixed-bottom">
+    <div class="card-body d-flex justify-content-center">
+<div class="card">
+  <div class="card-body">This is some text within a card body.</div>
 </div>
+</div>
+
+</nav>
 </>
     );
 };

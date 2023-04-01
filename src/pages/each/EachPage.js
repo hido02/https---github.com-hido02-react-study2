@@ -8,6 +8,8 @@ import AlignCenterView from '../../views/AlignCenterView';
 import MemoView from '../../views/MemoView';
 import PracticeView from '../../views/PracticeView';
 import ReduxView from '../../views/ReduxView';
+import justifyCenter from '../prac/justifyCenter';
+import bottomNav2 from '../../instudy/bottomNav2';
 
 const data = {
     memo: {
@@ -33,6 +35,15 @@ const data = {
     },
     profile: {
         html: <ProfileCard />
+    },
+    header: {
+        html: <Header />
+    },
+    justfiyCenter: {
+        html: <justifyCenter />
+    },
+    bottomNav: {
+        html: <bottomNav2 />
     }
 
 };
