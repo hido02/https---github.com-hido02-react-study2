@@ -3,6 +3,7 @@ import { Link, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Profiles from "./Profiles";
+import LinkProps from "../../instudy/group/LinkProps";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/profiles" component={Profiles} />
+      <Route path="/LinkProps" component={LinkProps} />
     </div>
   );
 }

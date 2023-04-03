@@ -18,15 +18,16 @@ function MainView() {
               <li><Link to="list/write">글쓰기</Link></li>
               <li><Link to="/redux">Redux</Link></li>
               <li><Link to="/alignCenter">가운데 정렬</Link></li>
-              <li><Link to="/withrouter">withRouter</Link></li>
+              <li><Link to="/withrouter">withRouter(링크 고장)</Link></li>
 
-              <li><Link to="/subRoute">서브라우트</Link></li>
+              <li><Link to="/subRoute">서브라우트(링크 고장)</Link></li>
               <li><Link to="/GroupMainView">인스터디 그룹 메인 뷰</Link></li>
-              <li><Link to="/view">인스터디 모달</Link></li>
+              <li><Link to="/view">인스터디 모달(링크 고장)</Link></li>
               <li><Link to="/detailedModal">인스터디 상세 모달</Link></li>
               <li><Link to="/profile">프로필</Link></li>
               <li><Link to="/header">헤더</Link></li>
               <li><Link to="/bottomNav2">하단 네비바</Link></li>
+              <li><Link to="/LinkProps">Link로 Props 보내기</Link></li>
 
             </ul>
 

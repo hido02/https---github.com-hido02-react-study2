@@ -3,87 +3,40 @@ import { Link } from "react-router-dom";
 function Header(){
     return (
         <>
-          <nav className="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-            <div className="container-fluid">
-              <Link
-              className="navbar-brand"
-              to="/"
-              >
-                ART
-              </Link>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-  
-              <div className="collapse navbar-collapse" id="navbarsExample04">
-                <ul className="navbar-nav me-auto mb-2 mb-md-0">
-                  <li className="nav-item">
-                    <Link
-                    className="nav-link active"
-                    to="/main"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                    className="nav-link"
-                    to="/main"
-                    >
-                      Link
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                    className="nav-link disabled"
-                    to="/main"
-                    >
-                      Disabled
-                    </Link>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <Link
-                    className="nav-link dropdown-toggle"
-                    to="/"
-                    id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false"
-                    >
-                      Dropdown
-                    </Link>
-                    {/* <a className="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a> */}
-                    <ul className="dropdown-menu" aria-labelledby="dropdown04">
-                      <li>
-                        <Link
-                        className="dropdown-item"
-                        to="/main"
-                        >
-                          Action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                        className="dropdown-item"
-                        to="/main"
-                        >
-                          Another action
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                        className="dropdown-item"
-                        to="/main"
-                        >
-                          Something else here
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <form>
-                  <input className="form-control" type="text" placeholder="Search" aria-label="Search"/>
-                </form>
-              </div>
-            </div>
-          </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
         </>
       );
 }

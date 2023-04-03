@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row } from 'react-bootstrap';
+import groupMember from './Profile/groupMember.jpg'; 
 
 const GroupMainView = () => {
+    const imgStyle = {
+        width: '70px',
+    }
 
     const [title, setTitle] = useState([
         '1과목 끝내기',
@@ -18,25 +22,31 @@ const GroupMainView = () => {
         width: '18rem',
     }
 
-    const mdModal = (props) => {
-        return (
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">...</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-        )
-    }
+//     const mdModal = (props) => {
+//         return (
+//             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+//   <div class="modal-dialog">
+//     <div class="modal-content">
+//       <div class="modal-header">
+//         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+//         <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+//       </div>
+//       <div class="modal-body">...</div>
+//       <div class="modal-footer">
+//       <div class="flex-shrink-0">
+//                   <img src={groupMember} alt="Generic placeholder" class="img-fluid rounded-circle border border-dark border-3" style={imgStyle} />
+
+//               </div>
+//               <div class="flex-shrink-0">
+//                   <img src={groupMember} alt="Generic placeholder" class="img-fluid rounded-circle border border-dark border-3" style={imgStyle} />
+
+//               </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+//         )
+//     }
 
     console.log(setClickedNum)
     console.log(setModal)
@@ -72,6 +82,12 @@ const GroupMainView = () => {
         <div class="row">
         <div class="col-md-3"><button type="button" class="btn btn-success">완료</button></div>
         </div>
+        <div class="d-flex align-items-center mb-4">
+              <div class="flex-shrink-0">
+                  <img src={groupMember} alt="Generic placeholder" class="img-fluid rounded-circle border border-dark border-3" style={imgStyle} />
+
+              </div>
+            </div>
         <div class="row">
         <div class="col-md-3"><button type="button" class="btn btn-warning">진행중</button></div>
         </div>
@@ -81,8 +97,14 @@ const GroupMainView = () => {
         </Container>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="flex-shrink-0">
+                  <img src={groupMember} alt="Generic placeholder" class="img-fluid rounded-circle border border-dark border-3" style={imgStyle} />
+
+              </div>
+              <div class="flex-shrink-0">
+                  <img src={groupMember} alt="Generic placeholder" class="img-fluid rounded-circle border border-dark border-3" style={imgStyle} />
+
+              </div>
       </div>
     </div>
   </div>

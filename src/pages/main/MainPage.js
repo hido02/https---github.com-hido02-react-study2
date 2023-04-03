@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../src/App.css';
 import Header from '../../components/Header';
 import MainView from '../../views/MainView';
-import { Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
 
 const App = () => {
       return (
@@ -12,7 +12,6 @@ const App = () => {
             <div className="row my-4">
             <MainView/>
             </div>
-            <Outlet />
             <footer class="pt-5 my-5 text-muted border-top">
                 Created by Hido &middot; &copy; 2023
             </footer>

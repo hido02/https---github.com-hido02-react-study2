@@ -17,6 +17,7 @@ import ProfileCard from './instudy/group/Profile/ProfileCard';
 import Header from './components/Header';
 import justfiyCenter from './pages/prac/justifyCenter';
 import bottomNav from './instudy/bottomNav2';
+import LinkProps from './instudy/group/LinkProps';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
     <Route path="header" element={<Header />}/>
     <Route path="justifyCenter" element={<justfiyCenter />}/>
     <Route path="bottomNav2" element={<bottomNav2 />}/>
+    <Route path="/LinkProps" component={LinkProps} />
     </Routes>
     
   );
